@@ -1,0 +1,92 @@
+.events_section {
+    padding: 4rem 6rem;
+}
+
+.events_section h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    line-height: 1;
+    color: var(--color-dark);
+}
+
+.events_section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: rgba(232, 234, 237, 0.5);
+    cursor: pointer;
+}
+
+.card .thumbnail {
+    overflow: hidden;
+}
+
+.card .thumbnail img {
+    width: 100%;
+    display: block;
+    transition: 0.4s all var(--animation-ease);
+}
+
+.card:hover .thumbnail img {
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+.card .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card .body .tags {
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    gap: 1rem;
+}
+
+.card .body .tags span{
+    display: block;
+    font-size: 0.8rem;
+    background-color: rgba(95, 116, 147, 0.2);
+    color: var(--color-primary);
+    padding: 0.15rem 1rem;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.card .body p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--color-dark);
+    padding: 0rem 1rem;
+}
+
+.card .body .actions {
+    display: flex;
+}
+
+.card .body .actions button{
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: none;
+    background: none;
+    color: var(--color-black);
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+.card .body .actions button {
+    background-color: rgba(251, 177, 140, 0.2);
+}
+
+.card .body .actions button img {
+    filter: 
+        brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
+}
