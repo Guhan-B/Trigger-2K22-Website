@@ -1,0 +1,111 @@
+.event_section {
+    padding: 4rem 6rem;
+    padding-top: calc(4rem + 100px);
+}
+
+.event_section  {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 6rem;
+}
+
+.event_section  .left h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    color: var(--color-dark);
+}
+
+.event_section  .left .description {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.event_section  .left .details {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.event_section  .left .details span p:nth-child(1){
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.event_section  .left .details span p:nth-child(2){
+    color: var(--color-black);
+}
+
+.event_section  .left .organizers {
+    margin-bottom: 1.5rem;
+}
+
+.event_section  .left .organizers p{
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.event_section  .left .organizers table {
+    color: var(--color-black);
+    border: 1px solid var(--color-light);
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.event_section  .left .organizers table thead {
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+}
+
+.event_section  .left .organizers table thead td {
+    padding: 0.75rem 1.25rem;
+}
+
+.event_section  .left .organizers table tbody {
+    font-weight: 400;
+}
+
+.event_section  .left .organizers table tbody td {
+    padding: 0.75rem 1.25rem;
+}
+
+.event_section  .left .organizers table tbody tr {
+    border-bottom: 1px solid var(--color-light);
+}
+
+.event_section  .left .organizers table tbody tr td a {
+    color: var(--color-black);
+}
+
+.event_section  .left .rules p{
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.event_section  .left .rules ul {
+    list-style: circle inside;
+    padding-left: 1rem;
+}
+
+.event_section  .left .rules ul li {
+    margin-bottom: 0.25rem;
+}
+
+.event_section  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.event_section  .right .poster{
+    width: 100%;
+}
+

@@ -8,9 +8,17 @@ import Footer from "../../components/Footer";
 import styles from "./styles.module.scss";
 
 const LandingPage = (props) => {
+    React.useEffect(() => {
+        document.documentElement.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant", // Optional if you want to skip the scrolling animation
+        });
+    }, []);
+    
     return (
         <React.Fragment>
-            <Header></Header>
+            <Header showLinks={true}></Header>
             <HeroSection></HeroSection>
             <AboutSection></AboutSection>
             <EventsSection></EventsSection>    

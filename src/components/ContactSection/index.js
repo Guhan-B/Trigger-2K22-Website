@@ -23,16 +23,16 @@ const ContactSection = () => {
     /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/.test(value);
 
   const sendMail = () => {
-    EmailJS.init("user_bEu9GQ8ZuTI9BYeqcWjZf");
+    EmailJS.init("p9TYtceKgqAHtKs_j");
     const templateParams = {
       from_email: email,
-      to_email: "bkguhan2001@gmail.com",
-      from_name: name,
+      to_email: "contact.actmit@gmail.com",
+      name: name,
       subject: subject,
       message: message,
     };
 
-    EmailJS.send("service_gt9wr2k", "template_pybbibp", templateParams)
+    EmailJS.send("service_trigger_website", "template_trigger_query", templateParams)
       .then(() => {
         setName("");
         setEmail("");

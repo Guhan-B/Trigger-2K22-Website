@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
 import ACT from "../../assets/ACT.png"
 
 const Header = (props) => {
+    const navigate = useNavigate();
+
     React.useEffect(() => {
         const header = document.getElementById("header");
 
@@ -22,22 +25,25 @@ const Header = (props) => {
             document.removeEventListener("scroll", listiner);
         }
     }, []);
+
     return (
         <header id="header" className={styles.header}>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={() => navigate("/trigger")}>
                 <img src={ACT} alt="ACT"/>
                 <span>
                     <p>ANNA UNIVERSITY, MIT</p>
                     <p>DEPARTMENT OF COMPUTER TECHNOLOGY</p>
                 </span>
             </div>
-
-            <div className={styles.links}>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#events">Events</a>
-                <a href="#support">Support</a>
-            </div>
+            { 
+                props.showLinks &&
+                <div className={styles.links}>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#events">Events</a>
+                    <a href="#support">Support</a>
+                </div>
+            }
         </header>
     );
 }

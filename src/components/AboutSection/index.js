@@ -10,7 +10,11 @@ const AboutSection = (props) => {
             <div className={styles.text}>
                 <h1>ABOUT US</h1>
                 <p>{ aboutContent }</p>
-                <Button label="Get In Touch"/>
+                <Button 
+                    type="button" 
+                    label="Get In Touch" 
+                    onClick={() => window.open("mailto:contact.actmit@gmail.com", "_current")}
+                />
             </div>
             <div className={styles.image}>
                 <img src={ABOUT} alt="About"/>

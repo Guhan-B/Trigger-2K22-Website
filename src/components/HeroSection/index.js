@@ -75,7 +75,7 @@ const HeroSection = (props) => {
             </div>
 
             <div className={styles.side_email}>
-                <a href="mailto:bkguhan2001@gmail.com">bkguhan2001@gmail.com</a>
+                <a href="mailto:contact.actmit@gmail.com">contact.actmit@gmail.com</a>
                 <span className={styles.line}></span>
             </div>
 

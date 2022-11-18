@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>Non Tech Event Manager</p>
                     <span>
                         <img src={PHONE} alt="phone"/>
-                        <p><a a href={`tel:${nonTechnicalEventManager.mobileNumber}`}>{nonTechnicalEventManager.mobileNumber}</a>&nbsp;&nbsp;({nonTechnicalEventManager.name})</p>
+                        <p><a href={`tel:${nonTechnicalEventManager.mobileNumber}`}>{nonTechnicalEventManager.mobileNumber}</a>&nbsp;&nbsp;({nonTechnicalEventManager.name})</p>
                     </span>
                 </span>
             </div>

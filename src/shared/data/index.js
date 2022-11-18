@@ -4,6 +4,7 @@ import Instagram from "../../assets/social icons/Instagram.svg";
 import LinkedIn from "../../assets/social icons/LinkedIn.svg";
 import Twitter from "../../assets/social icons/Twitter.svg";
 import SampleThumbnail from "../../assets/Sample Thumbnail.png";
+import SamplePoster from "../../assets/Sample Poster.png";
 
 export const socials = [
     {
@@ -40,83 +41,119 @@ export const socials = [
 
 export const events = [
     {
+        id: 1,
         title: "Sample Event I",
-        tagline: "",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien. Mauris eu elit consequat, pulvinar risus at, elementum libero",
         thumbnail: SampleThumbnail,
-        poster: "",
+        poster: SamplePoster,
         registrationLink: "https://www.instagram.com/",
         tags: ["Technical", "1st Years Special"],
+        teamSize: 3,
+        venue: "RLHC001",
+        schedule: "1st November, 2022 12:00 PM",
         organizers: [
             {
-                name: "",
-                mobileNumber: ""
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
+            },
+            {
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
             }
         ],
         rules: [
-            "",
-            "",
-            ""
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
         ]
     },
     {
+        id: 2,
         title: "Sample Event I",
-        tagline: "",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien. Mauris eu elit consequat, pulvinar risus at, elementum libero",
         thumbnail: SampleThumbnail,
-        poster: "",
+        poster: SamplePoster,
         registrationLink: "https://www.instagram.com/",
         tags: ["Technical"],
+        teamSize: 2,
+        venue: "RLHC001",
+        schedule: "1st November, 2022 12:00 PM",
         organizers: [
             {
-                name: "",
-                mobileNumber: ""
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
+            },
+            {
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
             }
         ],
         rules: [
-            "",
-            "",
-            ""
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
         ]
     },
     {
+        id: 3,
         title: "Sample Event I",
-        tagline: "",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien. Mauris eu elit consequat, pulvinar risus at, elementum libero",
         thumbnail: SampleThumbnail,
-        poster: "",
+        poster: SamplePoster,
         registrationLink: "https://www.instagram.com/",
         tags: ["Technical"],
+        teamSize: 1,
+        venue: "RLHC001",
+        schedule: "1st November, 2022 12:00 PM",
         organizers: [
             {
-                name: "",
-                mobileNumber: ""
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
+            },
+            {
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
             }
         ],
         rules: [
-            "",
-            "",
-            ""
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
         ]
     },
     {
+        id: 4,
         title: "Sample Event I",
-        tagline: "",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien. Mauris eu elit consequat, pulvinar risus at, elementum libero",
         thumbnail: SampleThumbnail,
-        poster: "",
+        poster: SamplePoster,
         registrationLink: "https://www.instagram.com/",
         tags: ["Technical"],
+        teamSize: 3,
+        venue: "RLHC001",
+        schedule: "1st November, 2022 12:00 PM",
         organizers: [
             {
-                name: "",
-                mobileNumber: ""
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
+            },
+            {
+                name: "Lorem Ipsum",
+                mobileNumber: "+91 89256 49372"
             }
         ],
         rules: [
-            "",
-            "",
-            ""
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien",
         ]
     },
 ];
