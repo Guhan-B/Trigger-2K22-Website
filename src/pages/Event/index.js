@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
@@ -9,7 +9,7 @@ import { events } from "../../shared/data";
 
 const EventPage = (props) => {
     const params = useParams();
-    const event = events.find(event => event.id == params.id);
+    const event = events.find(event => event.id === params.id);
 
     React.useEffect(() => {
         document.documentElement.scrollTo({

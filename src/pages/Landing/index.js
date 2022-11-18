@@ -5,7 +5,6 @@ import AboutSection from "../../components/AboutSection";
 import EventsSection from "../../components/EventsSection";
 import ContactSection from "../../components/ContactSection";
 import Footer from "../../components/Footer";
-import styles from "./styles.module.scss";
 
 const LandingPage = (props) => {
     React.useEffect(() => {
@@ -15,7 +14,7 @@ const LandingPage = (props) => {
             behavior: "instant", // Optional if you want to skip the scrolling animation
         });
     }, []);
-    
+
     return (
         <React.Fragment>
             <Header showLinks={true}></Header>

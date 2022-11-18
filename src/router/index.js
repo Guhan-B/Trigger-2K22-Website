@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, Outlet, useNavigate, Red } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import LandingPage from "../pages/Landing";
 import EventPage from "../pages/Event";

@@ -25,7 +25,7 @@ const Footer = () => {
                 </span>
             </div>
             <div className={styles.social}>
-                { socials.map(social => <a key={social.id} href={social.url}><img src={social.icon}/></a>) }
+                { socials.map(social => <a key={social.id} href={social.url}><img alt="icon" src={social.icon}/></a>) }
             </div>
             <div className={styles.copyright}>
                 <p>Copyright &copy; 2022, Association of Computer Technologists</p>
