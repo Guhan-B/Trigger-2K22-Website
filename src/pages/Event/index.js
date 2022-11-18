@@ -9,7 +9,10 @@ import { events } from "../../shared/data";
 
 const EventPage = (props) => {
     const params = useParams();
-    const event = events.find(event => event.id === params.id);
+    const event = events.find(event => Number.parseInt(event.id) === Number.parseInt(params.id));
+    
+    console.log(params);
+    console.log(event);
 
     React.useEffect(() => {
         document.documentElement.scrollTo({
