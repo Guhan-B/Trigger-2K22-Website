@@ -7,9 +7,8 @@ const Router = (props) => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Navigate to="trigger" replace/>}/>
-                <Route exact path="trigger" element={<LandingPage/>}/>
-                <Route path="trigger/event/:id" element={<EventPage/>}/>
+                <Route path="/" element={<LandingPage/>}/>
+                <Route path="event/:id" element={<EventPage/>}/>
             </Routes>
         </BrowserRouter>
     );
