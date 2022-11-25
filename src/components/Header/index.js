@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
 import ACT from "../../assets/ACT.png"
+import MIT from "../../assets/MIT.png";
+import AU from "../../assets/AU.png";
 
 const Header = (props) => {
     const navigate = useNavigate();
@@ -26,16 +28,24 @@ const Header = (props) => {
         }
     }, []);
 
+    const [showMenu, setShowMenu] = React.useState(false);
+
+    const iconClasses = [styles.burger_icon];
+    const menuClasses = [styles.burger_menu];
+
+    if(showMenu) {
+        iconClasses.push(styles.active);
+        menuClasses.push(styles.active);
+    }
+    
     return (
         <header id="header" className={styles.header}>
-            <div className={styles.logo} onClick={() => navigate("/trigger")}>
-                <img src={ACT} alt="ACT"/>
-                <span>
-                    <p>ANNA UNIVERSITY, MIT</p>
-                    <p>DEPARTMENT OF COMPUTER TECHNOLOGY</p>
-                </span>
+            <div className={[styles.logo, styles.AU_MIT].join(" ")} onClick={() => navigate("/")}>
+                <img src={AU}  alt="AU"/>
+                <img src={MIT} alt="MIT"/>
             </div>
-            { 
+
+            {
                 props.showLinks &&
                 <div className={styles.links}>
                     <a href="#home">Home</a>
@@ -44,6 +54,27 @@ const Header = (props) => {
                     <a href="#support">Support</a>
                 </div>
             }
+
+            { 
+                props.showLinks &&
+                <React.Fragment>
+                    <div className={menuClasses.join(" ")}>
+                        <a onClick={() => setShowMenu(false)} href="#home">Home</a>
+                        <a onClick={() => setShowMenu(false)} href="#about">About</a>
+                        <a onClick={() => setShowMenu(false)} href="#events">Events</a>
+                        <a onClick={() => setShowMenu(false)} href="#support">Support</a>
+                    </div>
+                    <div className={iconClasses.join(" ")} onClick={() => setShowMenu(!showMenu)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </React.Fragment>
+            }
+            
+            <div className={[styles.logo, styles.ACT].join(" ")} onClick={() => navigate("/")}>
+                <img src={ACT} alt="ACT"/>
+            </div>
         </header>
     );
 }

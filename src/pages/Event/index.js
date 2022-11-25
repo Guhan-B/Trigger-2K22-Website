@@ -42,6 +42,10 @@ const EventPage = (props) => {
                             <p>Schedule</p>
                             <p>{ event.schedule }</p>
                         </span>
+                        <span>
+                            <p>Prize</p>
+                            <p>Winner 500 INR & Runner Up 250 INR</p>
+                        </span>
                     </div>
                     <div className={styles.organizers}>
                         <p>Organizers Details</p>
@@ -77,7 +81,7 @@ const EventPage = (props) => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <img className={styles.poster} src={SAMPLE_POSTER} alt="poster"/>
+                    <img className={styles.poster} src={event.poster} alt="poster"/>
                     <Button type="button" label="Register Now" onClick={() => window.open(event.registrationLink, "_blank")}/>
                 </div>
             </div>

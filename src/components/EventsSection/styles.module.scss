@@ -1,5 +1,6 @@
 .events_section {
     padding: 4rem 6rem;
+    padding-bottom: 0;
 }
 
 .events_section h1 {
@@ -17,34 +18,26 @@
 
 .card {
     background-color: rgba(232, 234, 237, 0.5);
-}
-
-.card .thumbnail {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all var(--animation-ease);
     cursor: pointer;
 }
 
-.card .thumbnail img {
-    width: 100%;
-    display: block;
-    transition: 0.4s all var(--animation-ease);
-}
-
-.card .thumbnail:hover img {
-    transform: scale(1.05);
-    filter: brightness(90%);
+.card:hover {
+    background-color: rgba(232, 234, 237, 1);
 }
 
 .card .body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
+    flex: 1;
 }
 
 .card .body .tags {
     display: flex;
-    padding: 1rem;
-    padding-bottom: 0rem;
     gap: 1rem;
 }
 
@@ -58,19 +51,23 @@
     width: fit-content;
 }
 
+.card .body h2 {
+    color: var(--color-black);
+}
+
 .card .body p {
     font-size: 0.9rem;
     font-weight: 300;
     text-align: justify;
     color: var(--color-dark);
-    padding: 0rem 1rem;
 }
 
-.card .body .actions {
+.card .actions {
     display: flex;
+    margin-top: auto;
 }
 
-.card .body .actions button{
+.card .actions button{
     flex: 1;
     padding: 0.75rem;
     font-size: 1rem;
@@ -82,15 +79,30 @@
     cursor: pointer;
 }
 
-.card .body .actions button {
+.card .actions button {
     background-color: rgba(251, 177, 140, 0.2);
 }
 
-.card .body .actions button:hover {
+.card .actions button:hover {
     background-color: rgba(251, 177, 140, 0.3);
 }
 
-.card .body .actions button img {
+.card .actions button img {
     filter: 
         brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
+}
+
+@media only screen and (max-width:780px) {
+    .events_section {
+        padding: 2rem 1.5rem;
+    }
+
+    .events_section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .events_section .grid {
+        grid-template-columns: 1fr;
+    }
 }

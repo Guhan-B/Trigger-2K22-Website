@@ -10,14 +10,14 @@ const Footer = () => {
             <h2>TRIGGER 2K22</h2>
             <div className={styles.contacts}>
                 <span className={styles.contact}>
-                    <p>Tech Event Manager</p>
+                    <p>General Event Manager</p>
                     <span>
                         <img src={PHONE} alt="phone"/>
                         <p><a href={`tel:${technicalEventManager.mobileNumber}`}>{technicalEventManager.mobileNumber}</a>&nbsp;&nbsp;({technicalEventManager.name})</p>
                     </span>
                 </span>
                 <span className={styles.contact}>
-                    <p>Non Tech Event Manager</p>
+                    <p>Chair Person</p>
                     <span>
                         <img src={PHONE} alt="phone"/>
                         <p><a href={`tel:${nonTechnicalEventManager.mobileNumber}`}>{nonTechnicalEventManager.mobileNumber}</a>&nbsp;&nbsp;({nonTechnicalEventManager.name})</p>

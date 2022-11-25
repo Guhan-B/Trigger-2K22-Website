@@ -16,6 +16,7 @@ const EventsSection = () => {
                             key={event.id}
                             id={event.id}
                             image={event.thumbnail} 
+                            title={event.title}
                             tags={event.tags} 
                             description={event.description}
                             link={event.registrationLink}
@@ -36,17 +37,15 @@ const Card = (props) => {
 
     return (
         <div className={styles.card}>
-            <div className={styles.thumbnail} onClick={onClick}>
-                <img src={props.image} alt="Thumbnail"/>
-            </div>
-            <div className={styles.body}>
+            <div className={styles.body} onClick={onClick}>
+                <h2>{props.title}</h2>
                 <div className={styles.tags}>
                     { props.tags.map(tag => <span key={tag}>{tag}</span>) }
                 </div>
                 <p>{ props.description }</p>
-                <div className={styles.actions}>
+            </div>
+            <div className={styles.actions}>
                     <Button type="button" label="Register Now" onClick={() => window.open(props.link, "_blank")}/>
-                </div>
             </div>
         </div>
     );

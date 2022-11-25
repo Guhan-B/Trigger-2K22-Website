@@ -9,9 +9,14 @@
     gap: 6rem;
 }
 
+.event_section  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .event_section  .left h1{
     font-size: 3rem;
-    margin-bottom: 1.5rem;
     line-height: 1;
     color: var(--color-dark);
 }
@@ -21,13 +26,11 @@
     text-align: justify;
     line-height: 1.6;
     color: var(--color-black);
-    margin-bottom: 1.5rem;
 }
 
 .event_section  .left .details {
     display: flex;
     gap: 4rem;
-    margin-bottom: 1.5rem;
 }
 
 .event_section  .left .details span p:nth-child(1){
@@ -38,10 +41,6 @@
 
 .event_section  .left .details span p:nth-child(2){
     color: var(--color-black);
-}
-
-.event_section  .left .organizers {
-    margin-bottom: 1.5rem;
 }
 
 .event_section  .left .organizers p{
@@ -66,6 +65,7 @@
 
 .event_section  .left .organizers table thead td {
     padding: 0.75rem 1.25rem;
+    border: 1px solid var(--color-white);
 }
 
 .event_section  .left .organizers table tbody {
@@ -74,10 +74,11 @@
 
 .event_section  .left .organizers table tbody td {
     padding: 0.75rem 1.25rem;
+    border: 1px solid var(--color-white);
+    background-color: var(--color-light);
 }
 
 .event_section  .left .organizers table tbody tr {
-    border-bottom: 1px solid var(--color-light);
 }
 
 .event_section  .left .organizers table tbody tr td a {
@@ -97,6 +98,7 @@
 
 .event_section  .left .rules ul li {
     margin-bottom: 0.25rem;
+    text-align: justify;
 }
 
 .event_section  .right {
@@ -109,3 +111,34 @@
     width: 100%;
 }
 
+@media only screen and (max-width:780px) {
+    .event_section {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem;
+        padding-top: calc(2rem + 100px);
+        gap: 2rem;
+    }
+
+    .event_section  .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .event_section  .left .details {
+        flex-direction: column;
+        gap: 2rem
+    }
+
+    .event_section  .left .organizers table thead td {
+        padding: 0.5rem 0.75rem;
+        line-height: 1;
+    }
+
+    .event_section  .left .organizers table tbody td {
+        padding: 0.75rem 0.75rem;
+        line-height: 1;
+    }   
+    
+    .event_section  .left .rules ul {
+        padding-left: 0rem;
+    }
+}

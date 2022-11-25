@@ -34,7 +34,9 @@ const HeroSection = (props) => {
     return (
         <div id="home" className={styles.hero_section}>
             <div className={styles.center_text}>
-                <h2>Association of Computer Technologist Presents</h2>
+                <h2>Department of Computer Technology, Anna University, MIT Campus</h2>
+                <h2>Association of Computer Technologists</h2>
+                <h2>Presents</h2>
                 <h1>TRIGGER <span>2K22</span></h1>
             </div>
 
@@ -58,7 +60,7 @@ const HeroSection = (props) => {
                     </span>
                 </div>
                 <div className={styles.action}>
-                    <Button label="Register Now"/>
+                    <Button label="Register Now" href="#events"/>
                 </div>
             </div>
 

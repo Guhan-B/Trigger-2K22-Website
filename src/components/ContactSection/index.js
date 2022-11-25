@@ -116,7 +116,7 @@ const ContactSection = () => {
       <div className={styles.right}>
         <h2>CONTACT US</h2>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a pulvinar sapien. Mauris eu elit consequat, pulvinar risus at.
+        For any kind of queries related to the event, reach out to us any time by filling the form or contacting the event organizers
         </p>
         <form onSubmit={submit}>
           <div className={styles.col_2}>
